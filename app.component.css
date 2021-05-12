@@ -1,0 +1,19 @@
+.all{
+    border: 1px gray solid;
+    padding: 15px;
+    background-color: rgb(154, 229, 235);
+}
+.head{
+    font-family: "Verdana", sans-serif;
+}
+.ingredients_list{
+    font-style: italic;
+}
+.list{
+    font-size: 15px;
+}
+.table{
+    border-left: 1px gray solid;
+    padding-left: 10px;
+    background-color: rgb(84, 140, 173);
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title> {{ title }} </title>
+  </head>
+  <body>
+    <div class = "all">
+      <div class = "head">
+        <header>
+          <h1> {{ title }} </h1>
+        </header>
+      </div>
+      <div class="ingredients_list">
+        <h2> Ingredients </h2>
+      </div>
+      <div class="list">
+        <aside>
+          <input type="button" value="{{ patty }} - $5.00" (click)="add_patty()">
+          <br>
+          <input type="button" value="{{ onions }} - $1.00" (click)="add_onions()">
+          <br>
+          <input type="button" value="{{ buns }} - $3.00" (click)="add_buns()">
+          <br>
+          <input type="button" value="{{ mayo }} - $2.00" (click)="add_mayo()">
+          <br>
+          <input type="button" value="{{ ketchup }} - $2.00" (click)="add_ketchup()">
+          <br>
+          </aside>
+      </div>
+      <div class="table">
+        <ul id="ingredients">
+
+        </ul>
+      </div>
+      <aside>
+        <input type="text" disable value = "{{ total_cost }}">
+        <br>
+        <input type = "text" disabled value = "Input Cash">
+        <input type = "text" [(ngModel)] = "cash">
+        <br>
+        <button (click)="buy()"> Buy </button>
+        <br>
+        <input type = "text" disabled value = "Change: ">
+        <input type = "text" disabled value = "{{ change }}">
+      </aside>
+    </div>
+  </body>
+</html>
